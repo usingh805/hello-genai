@@ -2,10 +2,15 @@
   "servers": {
     "echo-mac": {
       "command": "/opt/homebrew/bin/pwsh",
-      "args": ["-NoProfile", "-File", "${workspaceFolder}/.vscode/mcp-echo.ps1"]
+      "args": [
+        "-NoProfile",
+        "-File",
+        "${workspaceFolder}/.vscode/mcp-echo.ps1"
+      ]
+    },
+    "github": {
+      "type": "http",
+      "url": "https://api.githubcopilot.com/mcp/"
     }
   }
 }
-
-
-
