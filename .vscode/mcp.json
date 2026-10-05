@@ -1,8 +1,11 @@
-{ 
-  "servers": { 
-    "github": { 
-      "type": "http", 
-      "url": "https://api.githubcopilot.com/mcp/"
-    }  
-  }  
-}  
+{
+  "servers": {
+    "echo-mac": {
+      "command": "/opt/homebrew/bin/pwsh",
+      "args": ["-NoProfile", "-File", "${workspaceFolder}/.vscode/mcp-echo.ps1"]
+    }
+  }
+}
+
+
+
