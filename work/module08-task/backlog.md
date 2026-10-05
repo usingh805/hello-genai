@@ -12,33 +12,33 @@
 
 ### Project structure and tooling
 
-- [ ] Create the `src/coxa_defect_report/` package.
-- [ ] Add `__init__.py` and `__main__.py` entry-point modules.
-- [ ] Add `tests/` with separate test modules for configuration, validation, reporting, Rally integration, email delivery, and runner behavior.
-- [ ] Add `requirements.txt` with only the approved runtime and test dependencies.
-- [ ] Add a supported Python version declaration for Python 3.11 or newer.
-- [ ] Add or verify `.gitignore` entries for `.env`, virtual environments, caches, and generated artifacts.
-- [ ] Create a local Python virtual environment and document how to activate it.
+- [ ] Create the `src/coxa_defect_report/` package. (GitHub issues: #1, #3, #7, #8, #29)
+- [ ] Add `__init__.py` and `__main__.py` entry-point modules. (GitHub issues: #4, #28)
+- [ ] Add `tests/` with separate test modules for configuration, validation, reporting, Rally integration, email delivery, and runner behavior. (GitHub issues: #5, #9)
+- [ ] Add `requirements.txt` with only the approved runtime and test dependencies. (GitHub issues: #6, #10)
+- [ ] Add a supported Python version declaration for Python 3.11 or newer. (GitHub issue: #11)
+- [ ] Add or verify `.gitignore` entries for `.env`, virtual environments, caches, and generated artifacts. (GitHub issue: #12)
+- [ ] Create a local Python virtual environment and document how to activate it. (GitHub issue: #13)
 
 ### Configuration foundation
 
-- [ ] Define a typed configuration model in `config.py`.
-- [ ] Load values from environment variables and an optional local environment file.
-- [ ] Support `RALLY_API_KEY`.
-- [ ] Support `RALLY_PROJECT_ID` or `RALLY_PROJECT_NAME`, requiring at least one.
-- [ ] Support `RALLY_BASE_URL` with the standard Rally URL as the default.
-- [ ] Support SMTP host, port, username, password, TLS setting, sender, and recipients.
-- [ ] Support `REPORT_TIMEZONE` with `Asia/Kolkata` as the default.
-- [ ] Support report subject prefix, Rally page size, and log level.
-- [ ] Add `.env.example` containing placeholders only and no real credentials.
-- [ ] Validate required configuration before making Rally or SMTP requests.
-- [ ] Report missing variable names without printing secret values.
+- [ ] Define a typed configuration model in `config.py`. (GitHub issue: #14)
+- [ ] Load values from environment variables and an optional local environment file. (GitHub issue: #15)
+- [ ] Support `RALLY_API_KEY`. (GitHub issue: #16)
+- [ ] Support `RALLY_PROJECT_ID` or `RALLY_PROJECT_NAME`, requiring at least one. (GitHub issue: #17)
+- [ ] Support `RALLY_BASE_URL` with the standard Rally URL as the default. (GitHub issue: #18)
+- [ ] Support SMTP host, port, username, password, TLS setting, sender, and recipients. (GitHub issue: #19)
+- [ ] Support `REPORT_TIMEZONE` with `Asia/Kolkata` as the default. (GitHub issue: #20)
+- [ ] Support report subject prefix, Rally page size, and log level. (GitHub issue: #21)
+- [ ] Add `.env.example` containing placeholders only and no real credentials. (GitHub issue: #27)
+- [ ] Validate required configuration before making Rally or SMTP requests. (GitHub issue: #26)
+- [ ] Report missing variable names without printing secret values. (GitHub issue: #25)
 
 ### Setup acceptance checks
 
-- [ ] A clean checkout can install dependencies using the documented command.
-- [ ] Configuration validation fails clearly when required values are missing.
-- [ ] No secret or local environment file is tracked by Git.
+- [ ] A clean checkout can install dependencies using the documented command. (GitHub issue: #24)
+- [ ] Configuration validation fails clearly when required values are missing. (GitHub issues: #2, #23)
+- [ ] No secret or local environment file is tracked by Git. (GitHub issue: #22)
 
 ## Phase 2: Core Features
 
